@@ -147,6 +147,7 @@ body {
     padding-right: 20px;
     margin-right: 26px;
     height: 64px;
+    color:#000000;
     background: #FBDC4D;
     border-radius: 50px;
     font-weight: 700;
@@ -156,7 +157,7 @@ body {
 }
 
 .button-skill:hover{
-    opacity: 60%;
+    color:#FF543E;
 }
 
 .header-img{
