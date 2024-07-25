@@ -1,76 +1,108 @@
 <!doctype html>
 <html lang="ru">
-  <head>
+    <head>
     <title>Title</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="styles.css">
-  </head>
+</head>
   <body>
     <div class="wrapper">
         <header class="header">
-            <img class="logo" src="images/logo.svg" width="100" height="100" alt="Логотип">
-            <nav class="nav-user">
-                <ul class="nav-user-list">
-                    <li class="nav-user-item">
-                        <a href="#aboutme">О себе</a>
+            <nav class="nav-list">
+                <div class="logo">
+                    <img class="logo-img" src="/images/logo.svg" width="60" height="60" alt="Логотип">
+                </div>
+                <ul class="nav-point-list">
+                    <li class="list-point">
+                        <a class="point-link" href="index.html#skill-list">Навыки</a>
                     </li>
-                    <li class="nav-user-item">
-                        <a href="#helpu">Я помогу с этим</a>
+                    <li class="list-point">
+                        <a class="point-link" href="index.html#portfolio">Портфолио</a>
                     </li>
-                    <li class="nav-user-item">
-                        <a href="#cash">Награда за помощь</a>
+                    <li class="list-point">
+                        <a class="point-link" href="index.html#contact">Контакты</a>
                     </li>
                 </ul>
             </nav>
         </header>
         <main class="main">
-            <h1 class="main-welcome">Приветствую!</h1>
-            <section class="talk-about">
-                <ul class="card-list">
-                    <li class="card-1">
-                        <h2 id="aboutme" class="card-1-title">Немного о себе:</h2>
-                        <p class="card-1-descr">
-                            Привет! Я - Саша и я обучаюсь в Html Academy на профессию "Фронтенд разработчик".
-                            Сейчас я заканчиваю модуль обучения чистому html и css, само обучение продлится до следующего лета. 
-                            Этот сайт-визитку я сделал, чтобы продемонстрировать свои приобретенные навыки и показать их Вам.
-                        </p>
-                    </li>
-                    <li class="card-2">
-                        <h2 id="helpu" class="card-2-title">Чем я смогу помочь тебе?</h2>
-                        <p class="card-2-title">А помочь я тебе могу с этим:</p>
-                            <ul>
-                                <li class="card-2-point">Верстка страницы - html и css</li>
-                                <li class="card-2-point">Построение сеток с помощью grid и flex</li>
-                                <li class="card-2-point">Добавление декоративных элементов</li>
-                            </ul>
-                    </li>
-                    <li class="card-3">
-                        <h2 id="cash" class="card-3-title">Чем можно вознаградить меня?</h2>
-                        <p class="card-3-title">Поскольку у меня на содержании две кошачьих мордашки, приходится их кормить, а корм стоит некоторое количество денег!
-                            За помощь я возьму немного, так как только учусь, а уровень знания и экспертизы оцениваю адекватно. Вот примерно, но всегда можно договориться:</p>
-                            <ul>
-                                <li class="card-3-point">Верстка одной страницы по макету: 1000 <span>₽</span></li>
-                                <li class="card-3-point">Общая стилизация страницы: 1500 <span>₽</span> </li>
-                                <li class="card-3-point">Построение сеток на странице с помощью flex или grid: 1500 <span>₽</span></li>
-                                <li class="card-3-point">Добавление декоративных элементов: 500 <span>₽</span></li>
-                            </ul>
-                    </li>
-                </ul>
+            <section class="aboutme">
+                <div class="container-about">
+                    <h1 class="name-family border-grad">Миронов Александр</h1>
+                    <img class="about-img" src="images/img-for-about.jpg" width="500" height="350" alt="Верстальщик за работой">
+                    <p class="about-descr">Верстальщик сайтов. <br>Умею работать в Figma, владею HTML+CSS, адаптивная верстка, сетки через flex\grid. Выполню заказ в срок, по ТЗ и с 5 бесплатными правками.</p>
+                    <div class="container-button">
+                        <a class="button-skill" href="index.html#skill-list">Познакомиться</a>
+                        <a class="button-skill" href="index.html#contact">Контакты</a>
+                        </div>
+                </div>
+            </section>
+            <div class="header-img">
+            <img src="/images/header_img.png" alt="image" width="1200">
+            </div>
+            <section class="skills-list">
+                <div class="skills-points">
+                    <ul class="skills-points-list" id="skill-list">
+                        <h3 class="point-title">Навыки:</h3>
+                        <li class="item-point">Адаптивная верстка HTML</li>
+                        <li class="item-point">Общая стилизация страницы</li>
+                        <li class="item-point">Добавление декоративных элементов</li>
+                        <li class="item-point">Построение в CSS сеток через flex\grid</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="portfolio" id="portfolio">
+                <div class="container-portfolio">
+                    <h3 class="portfolio-title border-grad">Портфолио:</h3>
+                    <p class="portfolio-descr">Данный проект я выполнил в процессе обучения в HTML Academy.<br>В процессе писал чистый код HTML+CSS, работал в Figma, строил сетки через flex\grid, добавлял декоративные элементы, подгонял по PixelPerfect и оптимизировал поведение элементов.</p>
+                    <div class="img-container">
+                        <a href="https://mironovaleksandr199304.github.io/2531571-sedona-40/" class="project-link">
+                          <img src="images/sedona.jpg" class="sedona-screenshot" alt="фото проекта Седона">
+                          <span class="overlay">Смотреть проект</span>
+                        </a>
+                      </div>
+                </a>
+                </div>
             </section>
         </main>
         <footer class="footer">
-            <ul class="social-list">
-                <li class="social-item-tg">
-                    Мой telegram
-                </li>
-                <li class="social-item-email">
-                    Мой е-майл
-                </li>
-            </ul>
+            <section class="social-contact">
+                <ul class="soc-item-list" id="contact">
+                    <h3>Связаться со мной:</h3>
+                    <li class="soc-item-tg">
+                        <a class="tg-link" href="https://t.me/AlexMironov1993" target="_blank" rel="noreffer noopener">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z" fill="#039BE5"/>
+                                <path d="M10.9815 23.48L34.1216 14.558C35.1956 14.17 36.1336 14.82 35.7856 16.444L35.7875 16.442L31.8475 35.004C31.5555 36.32 30.7736 36.64 29.6796 36.02L23.6796 31.598L20.7855 34.386C20.4655 34.706 20.1955 34.976 19.5755 34.976L20.0015 28.87L31.1215 18.824C31.6056 18.398 31.0135 18.158 30.3755 18.582L16.6336 27.234L10.7095 25.386C9.42355 24.978 9.39555 24.1 10.9815 23.48Z"/>
+                                </svg>                                
+                            <span class="visuallyhidden">Написать в Телеграм</span>
+                        </a>
+                    </li>
+                    <li class="soc-item-tel">
+                        <a class="wp-link" href="https://wa.me/79677297023">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="#FAFAFA" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_122_1097)">
+                                <path d="M23.9871 0.0126382C10.7401 0.015449 0.00357906 10.7566 0.00638989 24.0036C0.00732684 28.5906 1.32364 33.0811 3.79905 36.9428L0.0672913 46.6251C-0.131435 47.1401 0.124914 47.7186 0.639859 47.9174C0.755009 47.9618 0.877281 47.9845 1.00068 47.9843C1.11517 47.9849 1.22882 47.9653 1.33648 47.9263L11.3306 44.3585C22.5751 51.3617 37.3677 47.9234 44.3709 36.6788C51.374 25.4342 47.9357 10.6416 36.6912 3.63852C32.8795 1.26449 28.4778 0.00823454 23.9871 0.0126382Z" fill="#55CD6C"/>
+                                <path d="M35.422 28.098C35.422 28.098 32.9735 26.8987 31.4404 26.0992C29.7054 25.2057 27.6666 26.8787 26.7072 27.8302C25.214 27.2566 23.8502 26.3908 22.6956 25.2837C21.5882 24.1292 20.7225 22.7654 20.1491 21.272C21.1005 20.3106 22.7695 18.2738 21.8801 16.5389C21.0905 15.0038 19.8813 12.5572 19.8813 12.5552C19.7116 12.2185 19.3669 12.0059 18.9898 12.0055H16.991C14.0801 12.5083 11.9636 15.0482 11.994 18.002C11.994 21.1401 15.7497 27.1686 18.2823 29.703C20.8148 32.2375 26.8433 35.9913 29.9833 35.9913C32.9371 36.0217 35.477 33.9051 35.9798 30.9943V28.9955C35.9801 28.6144 35.7638 28.2663 35.422 28.098Z"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_122_1097">
+                                <rect width="48" height="48" fill="white"/>
+                                </clipPath>
+                                </defs>
+                                </svg>  
+                            <span class="visuallyhidden">WhatsApp</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
         </footer>
     </div>
   </body>
